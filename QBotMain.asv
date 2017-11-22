@@ -1,0 +1,9 @@
+
+
+strokes = ["ADha.wav","AKa.wav","ANa.wav","ATa.wav","ATi.wav","ATun.wav"];
+for file_name = strokes;
+    audio_file = strcat("Sample/",(file_name));
+    [y,fs] = audioread(straudio_file);
+    plot(y);
+    title(file_name);
+end
